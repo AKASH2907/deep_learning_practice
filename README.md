@@ -2,9 +2,14 @@
 keras implemetation of deep learning models
 
 ## MNIST Handwritten digits
-1) Simple - One Layer
-2) Two Layer Net
-3) Regularization Parameter - Dropout
-4) Optimizer - adam
-5) Optimizer - RMSprop
+Model/Accuracy| Training | Validation | Test
+------------- | -------- | ---------  | ----------
+Simple  |  89.77 | 90.67 | 90.59
+Three Layers  |   |  |
+Dropout |   | 
+RMS Prop  |   | 
+Adam  |   | 
+
+
+**Updating regularly**
 
