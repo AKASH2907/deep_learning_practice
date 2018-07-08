@@ -5,7 +5,7 @@ keras implemetation of deep learning models
 Model/Accuracy| Training | Validation | Test
 ------------- | -------- | ---------  | ----------
 Simple  |  89.77 | 90.67 | 90.59
-Three Layers  |   |  |
+Two Layers  |  93.03 |93.24  |93.28
 Dropout |   | 
 RMS Prop  |   | 
 Adam  |   | 
