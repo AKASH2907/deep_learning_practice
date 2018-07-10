@@ -11,6 +11,9 @@ Two Layers  |  93.03 |93.24  |93.28
 Dropout | 88.41  |93.48 | 93.41 
 Adam  |   99.86 | 97.65 | 97.84
 
+## Convolutional Neural Netwroks (CNNs)
+1) LeNet architecture
+
 
 **Updating regularly**
 
