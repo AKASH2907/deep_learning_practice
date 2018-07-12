@@ -20,7 +20,8 @@ Validation Loss - MNIST 2 layers
 
 
 ## Convolutional Neural Netwroks (CNNs)
-1) LeNet architecture
+1) MNIST - LeNet architecture - Accuracy - Train/Val/Test - 99.9/99.2/99.2
+2) CIFAR10 - 
 
 
 **Updating regularly**
