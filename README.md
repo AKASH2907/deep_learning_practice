@@ -11,24 +11,19 @@ Two Layers  |  93.03 |93.24  |93.28
 Dropout | 88.41  |93.48 | 93.41
 Adam  |   99.86 | 97.65 | 97.84
 
-
-Validation Accuracy - MNIST 2 layers
-<!---<p>
-<img align="left" src="https://user-images.githubusercontent.com/22872200/42591078-2b14553e-8563-11e8-8812-e5b6ba38c854.png" width="300" height="200" alt="val_acc_mnist 2 layers">
-<img align="right" src="https://user-images.githubusercontent.com/22872200/42591079-2b555f84-8563-11e8-8eee-12babcf92dbb.png" width="300" height="200" alt="val_loss_mnist 2 layers">
-</p>--->
-
-![val_acc_mnist 2 layers](https://user-images.githubusercontent.com/22872200/42591078-2b14553e-8563-11e8-8812-e5b6ba38c854.png)
-Validation Loss - MNIST 2 layers
-![val_loss_mnist 2 layers](https://user-images.githubusercontent.com/22872200/42591079-2b555f84-8563-11e8-8eee-12babcf92dbb.png) 
-
-
-
-
 ## Convolutional Neural Netwroks (CNNs)
 1) MNIST - LeNet architecture - Accuracy - Train/Val/Test - 99.9/99.2/99.2
 2) CIFAR10 - 
 
+## Important Codes
+* [split_data.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/split_data.py) - Generating X_train, Y_train, X_test, Y_test from new training data
+* [alexnet.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/alexnet.py) - AlexNet implementation from original Paper (used BatchNormalization instead of Local response normalization)
+* [vgg16.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/vgg16.py) - VGG 16/19 implementation using keras.io.applications
+
+
+## References
+[1] Alexnet
+[2] VGG Net
 
 **Updating regularly**
 
