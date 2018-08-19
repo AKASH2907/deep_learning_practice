@@ -12,8 +12,6 @@ from keras.preprocessing.sequence import skipgrams
 vocab_size = 5000
 embed_size = 300
 
-inp = Input(shape=(vocab_size,))
-
 
 word_model = Sequential()
 word_model.add(Embedding(vocab_size, embed_size,
