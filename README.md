@@ -17,8 +17,10 @@ Adam  |   99.86 | 97.65 | 97.84
 
 ## Important Codes
 * [split_data.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/split_data.py) - Generating X_train, Y_train, X_test, Y_test from new training data
-* [alexnet.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/alexnet.py) - AlexNet implementation from original Paper (used BatchNormalization instead of Local response normalization)
-* [vgg16.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/vgg16.py) - VGG 16/19 implementation using keras.io.applications
+* [alexnet.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/imagenet%20models/alexnet.py) - AlexNet implementation from original Paper (used BatchNormalization instead of Local response normalization)
+* [vgg16.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/imagenet%20models/vgg16.py) - VGG 16/19 finetuning
+* [inception_v3.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/imagenet%20models/inception_v3.py) - Inception V3 finetuning network
+* [inception_resnet_v2.py](https://github.com/AKASH2907/deep-learning-with-keras/blob/master/imagenet%20models/inception_resnet_v2.py) - Inception ResNet V2 finetuning network
 
 
 ## References
