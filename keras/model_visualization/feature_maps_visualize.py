@@ -59,12 +59,13 @@ feature_maps = model.predict(img)
 # print(len(feature_maps))
 # plot the output from each block
 square = 4
-c=0
+
+iterate = 0
 for fmap in feature_maps:
 	# plot all 64 maps in an 8x8 squares
 	ix = 1
 	pyplot.figure()
-	print(c)
+	print(iterate)
 	for _ in range(square):
 		for _ in range(square):
 			# specify subplot and turn of axis
@@ -75,12 +76,17 @@ for fmap in feature_maps:
 			pyplot.imshow(fmap[0, :, :, ix-1], cmap='gray')
 			ix += 1
 	
-	pyplot.savefig('layer_' + str(ixs[c]) + '.png')
+	# Saving figure
+	pyplot.savefig('layer_' + str(ixs[iterate]) + '.png')
 	pyplot.close()
 	
-	c+=1
+	iterate += 1
 	# show the figure
 	# pyplot.show()
+
+
+
+# Visualization of particular layer 
 
 # plot feature map of first conv layer for given image
 # # redefine model to output right after the first hidden layer
