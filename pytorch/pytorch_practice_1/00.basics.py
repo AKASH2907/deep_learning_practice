@@ -89,33 +89,32 @@ images, label = data_iteration.next()
 
 # Use of data loader
 for images, label in train_loader:
-	pass
+    pass
 
 
 # 5. Input pipeline for custom dataset
 
 # Custom dataset
 class CustomDataset(torch.utils.data.Dataset):
-	def __init__(self):
-		# File paths or list of names
-		pass
+    def __init__(self):
+        # File paths or list of names
+        pass
 
-	def __getitem__(self, index):
-		# Read one data from file [e.g. PIL.Image.open, numpy.fromfile]
-		# Preprocess data (torchvision.transforms)
-		# Return data pair (image and label)
-		pass
+    def __getitem__(self, index):
+        # Read one data from file [e.g. PIL.Image.open, numpy.fromfile]
+        # Preprocess data (torchvision.transforms)
+        # Return data pair (image and label)
+        pass
 
-	def __len__(self):
-		# Total size of dataset
-		return 0
+    def __len__(self):
+        # Total size of dataset
+        return 0
+
 
 # Train Loader
 custom_dataset = CustomDataset()
 train_loader = torch.utils.data.DataLoader(
-	dataset=custom_dataset,
-	batch_size=64,
-	shuffle=True
+    dataset=custom_dataset, batch_size=64, shuffle=True
 )
 
 
@@ -124,10 +123,10 @@ resnet = torchvision.models.resnet18(pretrained=True)
 
 # Fine-tuning
 for param in resnet.parameters():
-	param.requires_grad = False
+    param.requires_grad = False
 
 # Top layer for finetuning
-resnet.fc = nn.Linear(resnet.fc.in_features, 50) # n_classes
+resnet.fc = nn.Linear(resnet.fc.in_features, 50)  # n_classes
 
 # Forward pass
 images = torch.randn(64, 3, 224, 224)
@@ -136,9 +135,9 @@ print(output.size())
 
 
 # 7. Save and load model
-torch.save(resnet, 'model.ckpt')
-model = torch.load('model.ckpt')
+torch.save(resnet, "model.ckpt")
+model = torch.load("model.ckpt")
 
 # Save n load only model params (recommended))
-torch.save(resnet.state_dict(), 'params.ckpt')
-resnet.load_state_dict(torch.load('params.ckpt'))
+torch.save(resnet.state_dict(), "params.ckpt")
+resnet.load_state_dict(torch.load("params.ckpt"))
